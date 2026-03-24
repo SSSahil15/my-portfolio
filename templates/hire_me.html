@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+{% block title %}Hire Me | Sahil Ansari{% endblock %}
+
+{% block content %}
+<section class="page-section slide-up">
+
+    <!-- Terminal Header -->
+    <h1 class="section-title">> cat /prospects/hire_document.md</h1>
+
+    <!-- HERO SECTION -->
+    <div class="hire-hero glass-panel fade-in">
+        <h2>Let’s Strengthen Your Security.</h2>
+        <p class="hero-text">
+            I’m actively seeking roles as a 
+            <strong class="highlight">Penetration Tester, Security Researcher, or Junior Security Engineer</strong>.
+            I specialize in identifying real-world vulnerabilities, exploiting them responsibly, and helping teams implement practical, secure solutions.
+        </p>
+
+        <p class="focus-line">
+            <span style="color: var(--primary);">></span> <strong>Focus:</strong> Web Security • System Hardening • Threat Detection
+        </p>
+    </div>
+
+    <!-- VALUE SECTION -->
+    <div class="grid">
+
+        <!-- Offensive -->
+        <div class="card glass-panel fade-in" style="animation-delay: 0.1s;">
+            <div class="card-header">
+                <h3><i data-feather="zap" class="accent-icon"></i> Offensive Security</h3>
+            </div>
+            <p>
+                Hands-on experience identifying and exploiting vulnerabilities in web applications and systems using modern tools and methodologies.
+            </p>
+            <ul>
+                <li><span style="color: var(--primary);">></span> SQL Injection & Authentication Bypass</li>
+                <li><span style="color: var(--primary);">></span> Manual + Automated Vulnerability Testing</li>
+                <li><span style="color: var(--primary);">></span> Reconnaissance & Red Team Techniques</li>
+            </ul>
+        </div>
+
+        <!-- Defensive -->
+        <div class="card glass-panel fade-in" style="animation-delay: 0.2s;">
+            <div class="card-header">
+                <h3><i data-feather="lock" class="accent-icon"></i> Defensive Security</h3>
+            </div>
+            <p>
+                Strong foundation in securing infrastructure, enforcing access control, and monitoring environments for suspicious activity.
+            </p>
+            <ul>
+                <li><span style="color: var(--primary);">></span> Linux Hardening (RHEL, SELinux)</li>
+                <li><span style="color: var(--primary);">></span> Identity & Access Management</li>
+                <li><span style="color: var(--primary);">></span> SIEM Monitoring & Threat Detection</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- PROOF SECTION -->
+    <div class="glass-panel fade-in proof-section" style="animation-delay: 0.3s;">
+        <h3><i data-feather="shield" class="accent-icon" style="margin-right: 10px; width: 20px;"></i> Proof of Work</h3>
+        <ul style="list-style: none; padding-left: 0; margin-top: 15px;">
+            <li style="margin-bottom: 8px; color: var(--text-main);"><span style="color: var(--primary);">></span> Practiced OWASP Top 10 vulnerabilities in custom lab environments.</li>
+            <li style="margin-bottom: 8px; color: var(--text-main);"><span style="color: var(--primary);">></span> Extremely active on offensive security platforms mapping real-world attacks (TryHackMe / HackTheBox).</li>
+            <li style="margin-bottom: 8px; color: var(--text-main);"><span style="color: var(--primary);">></span> <strong>Tools:</strong> Nmap, Burp Suite, Metasploit, Wireshark, SQLmap.</li>
+        </ul>
+    </div>
+
+    <!-- CTA SECTION -->
+    <div class="glass-panel fade-in cta-section" style="animation-delay: 0.4s;">
+        <div class="cta-text">
+            <h3>Ready to collaborate?</h3>
+            <p>
+                Let’s outline how I can tangibly strengthen your security posture.
+            </p>
+        </div>
+
+        <div class="cta-buttons">
+            <a href="/contact" class="btn btn-primary" style="display: flex; align-items: center; gap: 8px;">
+                Contact Me <i data-feather="arrow-right" style="width: 16px;"></i>
+            </a>
+
+            <!-- Configured to link to Google Drive resume directly -->
+            <a href="https://drive.google.com/file/d/1PM2s5gIp4h_EGEX2g1ye0V0PByFgZGcS/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                View Resume
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- STYLES -->
+<style>
+/* HERO */
+.hire-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2.5rem;
+    border-radius: 12px;
+}
+
+.hire-hero h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    color: var(--text-muted);
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.focus-line {
+    margin-top: 1.5rem;
+    color: var(--text-main);
+    font-family: var(--font-code);
+}
+
+/* CARDS */
+.card-header h3 {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+    color: var(--text-main);
+}
+
+.card ul li {
+    margin-bottom: 8px;
+}
+
+/* PROOF */
+.proof-section {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.proof-section h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* CTA */
+.cta-section {
+    margin-top: 2rem;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-text h3 {
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.cta-text p {
+    color: var(--text-muted);
+    max-width: 400px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hire-hero h2 {
+        font-size: 2rem;
+    }
+
+    .cta-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+</style>
+{% endblock %}

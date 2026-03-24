@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Projects | Sahil Ansari{% endblock %}
+{% block content %}
+<section class="page-section slide-up">
+    <h1 class="section-title">> ./execute_projects.sh</h1>
+    <div class="grid projects-grid">
+        <!-- Password Strength Checker -->
+        <div class="card glass-panel fade-in">
+            <div class="card-header">
+                <h3>Password Strength Checker</h3>
+                <i data-feather="key" class="accent-icon"></i>
+            </div>
+            <p>A dynamic, modern dashboard app that visually assesses password strength in real-time. Designed with a premium glassmorphism effect, interactive dark/light theme toggles, and complex entropy calculation.</p>
+            <div class="tech-stack">
+                <span class="badge">HTML5</span>
+                <span class="badge">Vanilla CSS</span>
+                <span class="badge">JavaScript</span>
+            </div>
+            <a href="https://github.com/SSSahil15/Password-Strength-Checker.git" target="_blank" rel="noopener noreferrer" class="card-link">View Repository ⇲</a>
+        </div>
+
+        <!-- Malicious Link Detector -->
+        <div class="card glass-panel fade-in" style="animation-delay: 0.1s;">
+            <div class="card-header">
+                <h3>Malicious Link Detector</h3>
+                <i data-feather="alert-triangle" class="accent-icon"></i>
+            </div>
+            <p>An application that analyzes URLs, detects standard and valid domains, and identifies malicious links. Includes visual truncation and robust validation logic.</p>
+            <div class="tech-stack">
+                <span class="badge">Python FastApi</span>
+                <span class="badge">Threat Intel</span>
+                <span class="badge">JavaScript</span>
+            </div>
+            <a href="https://github.com/SSSahil15/Malicious-link-Detector.git" target="_blank" rel="noopener noreferrer" class="card-link">View Repository ⇲</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

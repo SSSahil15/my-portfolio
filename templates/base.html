@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sahil Ansari | Security Engineer{% endblock %}</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="/"><span>sudo</span> sahil_ansari</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/" class="nav-link">~/home</a></li>
+            <li><a href="/about" class="nav-link">~/about</a></li>
+            <li><a href="/experience" class="nav-link">~/experience</a></li>
+            <li><a href="/projects" class="nav-link">~/projects</a></li>
+            <li><a href="/skills" class="nav-link">~/skills</a></li>
+            <li><a href="/certs" class="nav-link">~/certificates</a></li>
+            <li><a href="/contact" class="nav-link">~/contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i data-feather="menu"></i>
+        </div>
+    </nav>
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2026 Sahil Ansari. Encrypted & Secured.</p>
+    </footer>
+
+    <!-- Particles.js for background effect -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

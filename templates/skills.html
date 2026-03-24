@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block title %}Skills | Sahil Ansari{% endblock %}
+{% block content %}
+<section class="page-section slide-up">
+    <h1 class="section-title">> cat skills.json</h1>
+    
+    <!-- We will use a 2-column grid for these cards -->
+    <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem;">
+        
+        <!-- Category 1: Security -->
+        <div class="card glass-panel fade-in">
+            <div style="display: flex; align-items: center; margin-bottom: 2rem; gap: 15px;">
+                <div style="background: rgba(0, 255, 65, 0.1); border-radius: 8px; padding: 12px; display: flex; align-items: center; justify-content: center;">
+                    <i data-feather="shield" style="color: var(--primary);"></i>
+                </div>
+                <h3 style="color: #fff; font-size: 1.4rem; margin: 0;">Security</h3>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                <span class="skill-badge">Penetration Testing</span>
+                <span class="skill-badge">Vulnerability Assessment</span>
+                <span class="skill-badge">SIEM</span>
+                <span class="skill-badge">OWASP Top 10</span>
+                <span class="skill-badge">Network Security</span>
+                <span class="skill-badge">Cryptography</span>
+            </div>
+        </div>
+
+        <!-- Category 2: Tools -->
+        <div class="card glass-panel fade-in" style="animation-delay: 0.1s;">
+            <div style="display: flex; align-items: center; margin-bottom: 2rem; gap: 15px;">
+                <div style="background: rgba(0, 195, 255, 0.1); border-radius: 8px; padding: 12px; display: flex; align-items: center; justify-content: center;">
+                    <i data-feather="tool" style="color: var(--secondary);"></i>
+                </div>
+                <h3 style="color: #fff; font-size: 1.4rem; margin: 0;">Tools</h3>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                <span class="skill-badge">Kali Linux</span>
+                <span class="skill-badge">Nmap</span>
+                <span class="skill-badge">Wireshark</span>
+                <span class="skill-badge">Metasploit</span>
+                <span class="skill-badge">Burp Suite</span>
+                <span class="skill-badge">John the Ripper</span>
+            </div>
+        </div>
+
+        <!-- Category 3: Programming -->
+        <div class="card glass-panel fade-in" style="animation-delay: 0.2s;">
+            <div style="display: flex; align-items: center; margin-bottom: 2rem; gap: 15px;">
+                <div style="background: rgba(168, 85, 247, 0.1); border-radius: 8px; padding: 12px; display: flex; align-items: center; justify-content: center;">
+                    <i data-feather="code" style="color: #a855f7;"></i>
+                </div>
+                <h3 style="color: #fff; font-size: 1.4rem; margin: 0;">Programming</h3>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Bash Scripting</span>
+                <span class="skill-badge">Security Scripts</span>
+                <span class="skill-badge">Automation</span>
+            </div>
+        </div>
+
+        <!-- Category 4: Platforms -->
+        <div class="card glass-panel fade-in" style="animation-delay: 0.3s;">
+            <div style="display: flex; align-items: center; margin-bottom: 2rem; gap: 15px;">
+                <div style="background: rgba(234, 179, 8, 0.1); border-radius: 8px; padding: 12px; display: flex; align-items: center; justify-content: center;">
+                    <i data-feather="monitor" style="color: #eab308;"></i>
+                </div>
+                <h3 style="color: #fff; font-size: 1.4rem; margin: 0;">Platforms</h3>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                <span class="skill-badge">Linux</span>
+                <span class="skill-badge">Windows</span>
+                <span class="skill-badge">Virtual Machines</span>
+                <span class="skill-badge">Cloud Basics</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.skill-badge {
+    background: rgba(0, 255, 65, 0.04); 
+    color: var(--primary);
+    font-family: var(--font-code);
+    font-size: 0.85rem;
+    padding: 0.5rem 1.1rem;
+    border-radius: 30px; /* Enhanced Pill shape matching your image */
+    border: 1px solid rgba(0, 255, 65, 0.3);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+.skill-badge:hover {
+    background: rgba(0, 255, 65, 0.15);
+    box-shadow: 0 0 12px rgba(0, 255, 65, 0.3);
+    transform: translateY(-2px);
+    border-color: var(--primary);
+}
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+</style>
+{% endblock %}

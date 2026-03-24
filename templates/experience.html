@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block title %}Experience & Training | Sahil Ansari{% endblock %}
+{% block content %}
+<section class="page-section slide-up">
+    <h1 class="section-title">> cat experience.log</h1>
+    
+    <div class="timeline">
+        <!-- Training & Internship -->
+        <div class="card glass-panel fade-in timeline-item">
+            <div class="card-header" style="margin-bottom: 0.5rem;">
+                <h3><i data-feather="briefcase" class="accent-icon" style="margin-right: 10px;"></i> Linux Sysadmin Intern</h3>
+                <span class="badge">May 2025</span>
+            </div>
+            <h4 style="color: var(--secondary); margin-bottom: 1rem;">RHEL – Linux System Administration</h4>
+            <ul style="list-style: none; padding-left: 0; color: var(--text-muted); line-height: 1.6;">
+                <li><span style="color: var(--primary);">></span> Completed RHEL 132 & 134 on Red Hat Enterprise Linux 10 with hands-on Linux system administration training.</li>
+                <li style="margin-top: 5px;"><span style="color: var(--primary);">></span> Gained experience in installation, configuration, user & permission management, and storage setup.</li>
+                <li style="margin-top: 5px;"><span style="color: var(--primary);">></span> Developed practical skills in network configuration, service management, and SELinux administration.</li>
+                <li style="margin-top: 5px;"><span style="color: var(--primary);">></span> Automated routine administrative tasks using Bash scripting.</li>
+                <li style="margin-top: 5px;"><span style="color: var(--primary);">></span> <strong style="color: #fff;">Tech stacks used:</strong> RHEL 10</li>
+                <li style="margin-top: 5px;"><span style="color: var(--primary);">></span> <strong style="color: #fff;">Project:</strong> Created and tested Bash scripts on Red Hat Enterprise Linux 10 to archive old files, send update notifications, and act as a user session checker, zombie process checker, system update checker, and password expiry checker.</li>
+            </ul>
+            <div style="margin-top: 25px; display: flex; flex-wrap: wrap; gap: 15px;">
+                <a href="https://drive.google.com/file/d/15lU0dUk9a_CGAOZgGU6neb-5F-0VKkUV/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1rem;"><i data-feather="file-text" style="width: 12px; margin-right: 5px;"></i>Certificate 1</a>
+                <a href="https://drive.google.com/file/d/1ZKJosUaqMn0OoynuIWcUdCbZ9GxjfsB2/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1rem;"><i data-feather="file-text" style="width: 12px; margin-right: 5px;"></i>Certificate 2</a>
+
+            </div>
+        </div>
+
+        <!-- Workshop -->
+        <div class="card glass-panel fade-in timeline-item" style="animation-delay: 0.1s; margin-top: 2rem;">
+            <div class="card-header" style="margin-bottom: 0.5rem;">
+                <h3><i data-feather="shield" class="accent-icon" style="margin-right: 10px;"></i> Penetration Testing Workshop</h3>
+            </div>
+            <h4 style="color: var(--secondary); margin-bottom: 1rem;">Specialized Security Training</h4>
+            <ul style="list-style: none; padding-left: 0; color: var(--text-muted); line-height: 1.6;">
+                <li><span style="color: var(--primary);">></span> Actively participated in an intensive training session focusing on advanced penetration testing and attack methodologies.</li>
+                <li style="margin-top: 5px;"><span style="color: var(--primary);">></span> Engaged with simulated exploitation environments to uncover, analyze, and ethically compromise target vulnerabilities.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<style>
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: var(--border-color);
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin-left: -1px;
+    z-index: -1;
+}
+.timeline-item {
+    position: relative;
+    margin-left: 50px;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: var(--bg-dark);
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    left: -38px;
+    top: 30px;
+    z-index: 1;
+    box-shadow: 0 0 10px var(--primary-glow);
+}
+@media (max-width: 768px) {
+    .timeline::after {
+        left: 10px;
+    }
+    .timeline-item {
+        margin-left: 30px;
+    }
+    .timeline-item::before {
+        left: -28px;
+    }
+}
+</style>
+{% endblock %}

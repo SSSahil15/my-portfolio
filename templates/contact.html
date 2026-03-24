@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block title %}Contact | Sahil Ansari{% endblock %}
+{% block content %}
+<section class="page-section slide-up">
+    <h1 class="section-title">> ./establish_connection.sh</h1>
+    <div class="grid">
+        <div class="card glass-panel fade-in">
+            <h2>Secure Transmission</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-muted);">Send an encrypted message directly to my server. All transmissions are logged and monitored.</p>
+            <form action="mailto:ansarisahil3690@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+                <div class="form-group">
+                    <label for="name">> name</label>
+                    <input type="text" id="name" name="name" class="terminal-input" placeholder="Enter your alias..." oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')" required>
+                </div>
+                <div class="form-group" style="margin-top: 15px;">
+                    <label for="email">> email</label>
+                    <input type="email" id="email" name="email" class="terminal-input" placeholder="Enter remote address..." required>
+                </div>
+                <div class="form-group" style="margin-top: 15px;">
+                    <label for="message">> payload</label>
+                    <textarea id="message" name="message" class="terminal-input" rows="5" placeholder="Enter message payload..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin-top: 20px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                    Send Message <i data-feather="send" style="width: 14px;"></i>
+                </button>
+            </form>
+        </div>
+        
+        <div class="card glass-panel fade-in" style="animation-delay: 0.1s;">
+            <h2>Communication Nodes</h2>
+            <p style="color: var(--text-muted);">Alternatively, reach out through public channels.</p>
+            <div class="contact-methods" style="margin-top: 20px; display: flex; flex-direction: column; gap: 15px;">
+                <div class="contact-method" style="display: flex; align-items: center; gap: 15px;">
+                    <div class="cert-icon" style="margin-bottom: 0; width: 40px; height: 40px;"><i data-feather="mail"></i></div>
+                    <div>
+                        <strong style="color: #fff;">Email</strong>
+                        <p style="margin-bottom: 0;"><a href="mailto:ansarisahil3690@gmail.com">ansarisahil3690@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-method" style="display: flex; align-items: center; gap: 15px;">
+                    <div class="cert-icon" style="margin-bottom: 0; width: 40px; height: 40px;"><i data-feather="phone"></i></div>
+                    <div>
+                        <strong style="color: #fff;">Comm Link</strong>
+                        <p style="margin-bottom: 0; color: var(--text-muted);"><a href="tel:+916202230542" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='inherit'">+91 6202230542</a></p>
+                    </div>
+                </div>
+                <div class="contact-method" style="display: flex; align-items: center; gap: 15px;">
+                    <div class="cert-icon" style="margin-bottom: 0; width: 40px; height: 40px;"><i data-feather="map-pin"></i></div>
+                    <div>
+                        <strong style="color: #fff;">Location</strong>
+                        <p style="margin-bottom: 0; color: var(--text-muted);">Cyber-space / Terminal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+.terminal-input {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+    color: var(--primary);
+    padding: 10px 15px;
+    font-family: var(--font-code);
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s;
+}
+.terminal-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 10px var(--primary-glow);
+}
+.terminal-input::placeholder {
+    color: rgba(0, 255, 65, 0.3);
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-muted);
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+}
+</style>
+{% endblock %}
