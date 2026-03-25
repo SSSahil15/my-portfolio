@@ -463,6 +463,14 @@ footer {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        padding: 1rem 5%;
+        position: relative;
+    }
+    .nav-brand a {
+        font-size: 1.1rem;
+    }
     .nav-links {
         display: none;
         flex-direction: column;
@@ -470,9 +478,11 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background: rgba(5, 5, 5, 0.95);
-        padding: 2rem;
+        background: rgba(5, 5, 5, 0.98);
+        padding: 1.5rem 5%;
+        gap: 1rem;
         border-bottom: 1px solid var(--border-color);
+        z-index: 99;
     }
     .nav-links.active {
         display: flex;
@@ -480,15 +490,93 @@ footer {
     .hamburger {
         display: block;
     }
+
+    /* Container */
+    .container {
+        padding: 2rem 5%;
+    }
+
+    /* Section title */
+    .section-title {
+        font-size: 1.3rem;
+        word-break: break-word;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Grid — single column on mobile */
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    /* Glass panels */
+    .glass-panel {
+        padding: 1.2rem;
+    }
+
+    /* Glitch headline — scale down so it doesn't overflow */
+    .glitch {
+        font-size: 2.2rem;
+    }
+
+    /* Typing text */
+    .typing-text {
+        font-size: 1.1rem;
+        height: auto;
+        min-height: 30px;
+    }
+
+    /* Hero */
     .hero {
         flex-direction: column;
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
+        gap: 2rem;
+        min-height: auto;
     }
     .hero-actions {
         justify-content: center;
+        flex-wrap: wrap;
     }
     .hero-description {
-        margin: 1.5rem auto 2.5rem;
+        margin: 1rem auto 2rem;
+        font-size: 1rem;
+    }
+
+    /* Cyber shield — shrink on small screens */
+    .cyber-shield {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Buttons — full width on small screens */
+    .btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem 5%;
+        font-size: 0.8rem;
+    }
+}
+
+/* Extra small screens (< 420px) */
+@media (max-width: 420px) {
+    .glitch {
+        font-size: 1.8rem;
+    }
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .cyber-shield {
+        width: 160px;
+        height: 160px;
+    }
+    .nav-brand a {
+        font-size: 1rem;
     }
 }
