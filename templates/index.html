@@ -36,6 +36,9 @@
         <span class="badge edu-badge">Pursuing</span>
         <span class="edu-year">3rd Year · Expected 2027</span>
     </div>
+    <a href="/about#education" class="btn btn-primary edu-more-btn">
+        <i data-feather="chevron-right" style="width:14px;"></i> More Details
+    </a>
 </div>
 
 <style>
@@ -97,6 +100,15 @@
 @media (max-width: 600px) {
     .edu-bar { flex-direction: column; align-items: flex-start; gap: 0.6rem; }
     .edu-status { align-items: flex-start; }
+}
+.edu-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.78rem;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 </style>
 {% endblock %}
