@@ -21,4 +21,82 @@
         </div>
     </div>
 </section>
+
+<!-- Education Summary -->
+<div class="edu-bar glass-panel fade-in">
+    <div class="edu-icon">
+        <i data-feather="book-open"></i>
+    </div>
+    <div class="edu-info">
+        <span class="edu-label">> education</span>
+        <strong>B.Tech — CSE (Cybersecurity)</strong>
+        <span class="edu-university">Lovely Professional University</span>
+    </div>
+    <div class="edu-status">
+        <span class="badge edu-badge">Pursuing</span>
+        <span class="edu-year">3rd Year · Expected 2027</span>
+    </div>
+</div>
+
+<style>
+.edu-bar {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 2.5rem;
+    padding: 1rem 1.5rem;
+    border-left: 3px solid var(--primary);
+    flex-wrap: wrap;
+}
+.edu-icon {
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.edu-icon svg { width: 22px; height: 22px; }
+.edu-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    flex: 1;
+}
+.edu-label {
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+.edu-info strong {
+    color: #fff;
+    font-size: 0.95rem;
+}
+.edu-university {
+    font-family: var(--font-code);
+    font-size: 0.82rem;
+    color: var(--secondary);
+}
+.edu-status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3rem;
+    flex-shrink: 0;
+}
+.edu-badge {
+    background: rgba(0,255,65,0.12);
+    color: var(--primary);
+    font-size: 0.72rem;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid rgba(0,255,65,0.3);
+}
+.edu-year {
+    font-family: var(--font-code);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+@media (max-width: 600px) {
+    .edu-bar { flex-direction: column; align-items: flex-start; gap: 0.6rem; }
+    .edu-status { align-items: flex-start; }
+}
+</style>
 {% endblock %}
